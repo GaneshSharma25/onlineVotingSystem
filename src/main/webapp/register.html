@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RegisterUser</title>
+<style>
+	body {
+		background-color: #f1f1f1;
+	}
+
+	.container {
+		width: 500px;
+		margin: auto;
+		margin-top: 150px;
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 12px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	h1 {
+		color: maroon;
+		margin-left: 130px;
+		font-family: Arial, sans-serif;
+	}
+
+	table {
+		margin-top: 20px;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="date"] {
+		width: 100%;
+		padding: 10px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		font-family: Arial, sans-serif;
+	}
+
+	button[type="submit"] {
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-family: Arial, sans-serif;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #45a049;
+	}
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<form action="register" method="post">
+			<h1>Voter Registration</h1>
+			<table>
+				<tbody>
+					<tr>
+						<td>Enter Name:</td>
+						<td><input type="text" name="fname" id="fname"
+							placeholder="First Name"></td>
+						<td><input type="text" name="lname" id="lname"
+							placeholder="Last Name"></td>
+					</tr>
+					<tr>
+						<td>Enter Email:</td>
+						<td><input type="text" name="email" id="email"
+							placeholder="Enter Email Address"></td>
+					</tr>
+					<tr>
+						<td>Enter Password:</td>
+						<td><input type="password" name="password" id="password"
+							placeholder="Enter Password"></td>
+					</tr>
+					<tr>
+						<td>Enter DOB:</td>
+						<td><input type="date" name="dob" id="id"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<button type="submit" name="btn" id="btn">Submit</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
